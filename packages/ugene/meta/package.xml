@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Standard package</DisplayName>
+    <Description>Install this example.</Description>
+    <Default>true</Default>
+    <Version>0.1.0-1</Version>
+    <ReleaseDate>2010-09-21</ReleaseDate>
+    <Licenses>
+        <License name="UGENE: GNU GPLv2" file="license.txt" />
+    </Licenses>
+    <SortingPriority>100</SortingPriority>
+    <Script>installscript.qs</Script>
+</Package>

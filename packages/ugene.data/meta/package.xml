@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Data folder</DisplayName>
+    <Description>Data folder with examples of various data.</Description>
+    <Default>true</Default>
+    <Version>1.20.0</Version>
+    <Dependencies>ugene</Dependencies>
+    <ReleaseDate>2016-02-02</ReleaseDate>
+    <SortingPriority>100</SortingPriority>
+    <ForcedInstallation>true</ForcedInstallation>
+</Package>

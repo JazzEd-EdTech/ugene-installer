@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>bedGraphToBigWig</DisplayName>
+    <Description>Convert a bedGraph file to bigWig format.</Description>
+    <Version>4</Version>
+    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Licenses>
+        <License name="TODO: need check license of bedGraphToBigWig" file="license.txt" />
+    </Licenses>
+    <Default>true</Default>
+    <Script>installscript.qs</Script>
+    <SortingPriority>100</SortingPriority>
+</Package>

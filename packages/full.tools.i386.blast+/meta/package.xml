@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>BLAST+</DisplayName>
+    <Description>BLAST+: Basic Local Alignment Search Tool.</Description>
+    <Version>2.2.30</Version>
+    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Licenses>
+        <License name="TODO: check license of BLAST+" file="license.txt" />
+    </Licenses>
+    <Default>true</Default>
+    <SortingPriority>94</SortingPriority>
+</Package>

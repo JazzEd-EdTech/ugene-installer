@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Data for the Cistrome workflow (for ChIP-Seq)</DisplayName>
+    <Description>CAP3 Sequence Assembly Program.</Description>
+    <Version>10-15-07</Version>
+    <ReleaseDate>2010-07-15</ReleaseDate>
+    <Licenses>
+        <License name="Beer Public License Agreement" file="license.txt" />
+    </Licenses>
+</Package>

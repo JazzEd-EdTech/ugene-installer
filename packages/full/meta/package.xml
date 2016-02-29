@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Full package additions</DisplayName>
+    <Description>Full package additions.</Description>
+    <Version>1.21.0</Version>
+    <ReleaseDate>2016-02-02</ReleaseDate>
+    <SortingPriority>90</SortingPriority>
+    <Default>true</Default>
+</Package>

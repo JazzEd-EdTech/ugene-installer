@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>CAP3</DisplayName>
+    <Description>CAP3 Sequence Assembly Program.</Description>
+    <Version>10-15-07</Version>
+    <ReleaseDate>2010-07-15</ReleaseDate>
+    <Licenses>
+        <License name="CAP3: Beer Public License Agreement" file="license.txt" />
+    </Licenses>
+    <Script>installscript.qs</Script>
+    <Virtual>true</Virtual>
+    <SortingPriority>86</SortingPriority>
+</Package>

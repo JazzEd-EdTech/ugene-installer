@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>SPAdes</DisplayName>
+    <Description>Install this example.</Description>
+    <Version>3.6.0</Version>
+    <ReleaseDate>2015-08-17</ReleaseDate>
+    <Licenses>
+        <License name="SPAdes: GNU GPLv2" file="license.txt" />
+    </Licenses>
+    <Script>installscript.qs</Script>
+    <Default>false</Default>
+    <SortingPriority>62</SortingPriority>
+</Package>

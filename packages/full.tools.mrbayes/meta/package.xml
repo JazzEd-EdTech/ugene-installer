@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>MrBayes</DisplayName>
+    <Description>MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models.</Description>
+    <Version>3.2.3</Version>
+    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Licenses>
+        <License name="MrBayes: GNU GPLv2" file="license.txt" />
+    </Licenses>
+    <Script>installscript.qs</Script>
+    <Virtual>true</Virtual>
+    <SortingPriority>72</SortingPriority>
+</Package>

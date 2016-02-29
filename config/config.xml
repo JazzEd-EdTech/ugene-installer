@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Unipro UGENE</Name>
+    <Version>1.20.0</Version>
+    <Title>Unipro UGENE Installer</Title>
+    <Publisher>Unipro</Publisher>
+    <StartMenuDir>Super App</StartMenuDir>
+    <TargetDir>@HomeDir@/installUgene</TargetDir>
+    <WizardDefaultWidth>768</WizardDefaultWidth>
+    <WizardDefaultHeight>480</WizardDefaultHeight>
+    <RemoteRepositories>
+     <Repository>
+             <Url>http://om.alteametasoft.com/repositoryUgene</Url>
+             <Enabled>1</Enabled>
+             <DisplayName>UGENE general repository</DisplayName>
+     </Repository>
+    </RemoteRepositories>
+</Installer>
