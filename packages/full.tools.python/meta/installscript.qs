@@ -96,17 +96,17 @@ function Component()
     //
     console.log("CPU Architecture: " +  systemInfo.currentCpuArchitecture);
 
-    installer.componentByName("full.tools.i386.python2").setValue("Virtual", "true");
-    installer.componentByName("full.tools.i386.python2").setValue("Default", "false");
-    installer.componentByName("full.tools.x86_64.python2").setValue("Virtual", "true");
-    installer.componentByName("full.tools.x86_64.python2").setValue("Default", "false");
+    installer.componentByName("full.tools.i386.python").setValue("Virtual", "true");
+    installer.componentByName("full.tools.i386.python").setValue("Default", "false");
+    installer.componentByName("full.tools.x86_64.python").setValue("Virtual", "true");
+    installer.componentByName("full.tools.x86_64.python").setValue("Default", "false");
 
     if (systemInfo.currentCpuArchitecture === "i386") {
-        installer.componentByName("full.tools.i386.python2").setValue("Virtual", "false");
-        installer.componentByName("full.tools.i386.python2").setValue("Default", "true");
+        installer.componentByName("full.tools.i386.python").setValue("Virtual", "false");
+        installer.componentByName("full.tools.i386.python").setValue("Default", "true");
     }
     if (systemInfo.currentCpuArchitecture === "x86_64") {
-        installer.componentByName("full.tools.x86_64.python2").setValue("Virtual", "false");
-        installer.componentByName("full.tools.x86_64.python2").setValue("Default", "true");
+        installer.componentByName("full.tools.x86_64.python").setValue("Virtual", "false");
+        installer.componentByName("full.tools.x86_64.python").setValue("Default", "true");
     }
 }
