@@ -4,15 +4,25 @@
     <Version>1.20.0</Version>
     <Title>Unipro UGENE Installer</Title>
     <Publisher>Unipro</Publisher>
-    <StartMenuDir>Super App</StartMenuDir>
-    <TargetDir>@HomeDir@/installUgene</TargetDir>
+    <ProductUrl>http://ugene.net</ProductUrl>
+    <StartMenuDir>Unipro UGENE</StartMenuDir>
+    <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
+    <AllowSpaceInPath>true</AllowSpaceInPath>
+
     <WizardDefaultWidth>768</WizardDefaultWidth>
     <WizardDefaultHeight>480</WizardDefaultHeight>
-    <RemoteRepositories>
+
+    <InstallerWindowIcon>ugene_128.png</InstallerWindowIcon>
+
+    <WizardStyle>Modern</WizardStyle>
+    <Logo>ugene_logo_installer.png</Logo>
+    <Watermark>about.png</Watermark>
+    <!--<Background>background.png</Background>-->
+    <!--<RemoteRepositories>
      <Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgene</Url>
+             <Url>http://om.alteametasoft.com/repositoryUgeneWin</Url>
              <Enabled>1</Enabled>
              <DisplayName>UGENE general repository</DisplayName>
      </Repository>
-    </RemoteRepositories>
+    </RemoteRepositories>-->
 </Installer>

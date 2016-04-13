@@ -6,4 +6,5 @@
     <ReleaseDate>2016-02-02</ReleaseDate>
     <SortingPriority>90</SortingPriority>
     <Default>true</Default>
+    <Script>installscript.qs</Script>
 </Package>

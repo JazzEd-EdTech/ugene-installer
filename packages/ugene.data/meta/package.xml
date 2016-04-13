@@ -8,4 +8,5 @@
     <ReleaseDate>2016-02-02</ReleaseDate>
     <SortingPriority>100</SortingPriority>
     <ForcedInstallation>true</ForcedInstallation>
+    <Script>installscript.qs</Script>
 </Package>
