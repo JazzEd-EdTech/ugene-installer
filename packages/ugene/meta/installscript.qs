@@ -114,19 +114,11 @@ function Component()
         installer.componentByName("ugene.x86_64").setValue("Default", "true");
         installer.componentByName("ugene.x86_64").setValue("ForcedInstallation", "true");
     }
-    if (systemInfo.kernelType === "winnt") {
-        if ( systemInfo.currentCpuArchitecture === "i386") {
-            var programFiles = installer.environmentVariable("ProgramFiles");
-        }
-        if ( systemInfo.currentCpuArchitecture === "x86_64") {
-            var programFiles = installer.environmentVariable("ProgramW6432");
-        }
-        if (programFiles != "")
-            installer.setValue("TargetDir", programFiles + "/Unipro UGENE");
-
-//        installer.installationFinished.connect(this, Component.prototype.installationFinishedPageIsShown);
-//        installer.finishButtonClicked.connect(this, Component.prototype.installationFinished);
-    }
+    if (systemInfo.kernelType != "linux") {
+	installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
+    } else {
+		installer.setValue("TargetDir", "@HomeDir@/UGENE");
+	}
 }
 Component.prototype.createOperations = function()
 {
@@ -248,8 +240,10 @@ function registerFileTypes()
 
         //UGENE Workflow format
         component.addOperation("RegisterFileType",   "uwl", ugeneuiPath + " %1", "UGENE Workflow Language", "text/plain", ugeneuiPath + ",1");
-
     }
+	if (systemInfo.kernelType == "linux") {
+		component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
+	}
 }
 /*Component.prototype.installationFinishedPageIsShown = function()
 {
