@@ -5,6 +5,6 @@
     <Version>10-15-07</Version>
     <ReleaseDate>2010-07-15</ReleaseDate>
     <Licenses>
-        <License name="Beer Public License Agreement" file="license.txt" />
+        <License name="RScript: GNU GPL-2 | GPL-3" file="license.txt" />
     </Licenses>
 </Package>

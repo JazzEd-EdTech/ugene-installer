@@ -4,9 +4,6 @@
     <Description>BLAST: Basic Local Alignment Search Tool (Old version).</Description>
     <Version>2.2.26</Version>
     <ReleaseDate>2016-02-02</ReleaseDate>
-    <Licenses>
-        <License name="TODO: check license of BLAST" file="license.txt" />
-    </Licenses>
     <Script>installscript.qs</Script>
     <Virtual>true</Virtual>
     <SortingPriority>96</SortingPriority>

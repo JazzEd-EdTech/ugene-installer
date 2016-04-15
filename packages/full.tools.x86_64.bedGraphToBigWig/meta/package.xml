@@ -5,7 +5,7 @@
     <Version>4</Version>
     <ReleaseDate>2016-02-02</ReleaseDate>
     <Licenses>
-        <License name="TODO: need check license of bedGraphToBigWig" file="license.txt" />
+        <License name="BedGraphToBigWig: Non-Commercial Use" file="license.txt" />
     </Licenses>
     <Default>true</Default>
     <Script>installscript.qs</Script>

@@ -5,7 +5,7 @@
     <Version>10-15-07</Version>
     <ReleaseDate>2010-07-15</ReleaseDate>
     <Licenses>
-        <License name="CAP3: Beer Public License Agreement" file="license.txt" />
+        <License name="CAP3: Non-Commercial Use" file="license.txt" />
     </Licenses>
     <Script>installscript.qs</Script>
     <Virtual>true</Virtual>
