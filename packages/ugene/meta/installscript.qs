@@ -114,11 +114,22 @@ function Component()
         installer.componentByName("ugene.x86_64").setValue("Default", "true");
         installer.componentByName("ugene.x86_64").setValue("ForcedInstallation", "true");
     }
-    if (systemInfo.kernelType != "linux") {
-	installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
-    } else {
-		installer.setValue("TargetDir", "@HomeDir@/UGENE");
+
+    if (systemInfo.kernelType === "winnt") {
+        if ( systemInfo.currentCpuArchitecture === "i386") {
+            var programFiles = installer.environmentVariable("ProgramFiles");
+        }
+        if ( systemInfo.currentCpuArchitecture === "x86_64") {
+            var programFiles = installer.environmentVariable("ProgramW6432");
+        }
+        if (programFiles != "") {
+            installer.setValue("TargetDir", programFiles + "/UGENE");
 	}
+    } else {
+	installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
+    }
+
+
 }
 Component.prototype.createOperations = function()
 {
@@ -245,29 +256,3 @@ function registerFileTypes()
 		component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
 	}
 }
-/*Component.prototype.installationFinishedPageIsShown = function()
-{
-    try {
-        if (installer.isInstaller() && installer.status == QInstaller.Success) {
-            installer.addWizardPageItem( component, "ReadMeCheckBoxForm", QInstaller.InstallationFinished );
-        }
-    } catch(e) {
-        console.log(e);
-    }
-}
-
-Component.prototype.installationFinished = function()
-{
-    try {
-        if (installer.isInstaller() && installer.status == QInstaller.Success) {
-            var isReadMeCheckBoxChecked = component.userInterface( "ReadMeCheckBoxForm" ).readMeCheckBox.checked;
-            if (isReadMeCheckBoxChecked) {
-                var component_root_path = installer.value("TargetDir");
-                component_root_path = component_root_path.replace(/\//g, "\\");
-                QDesktopServices.openUrl("file:///" + component_root_path + "\\ugeneui.exe"); //Working only for windows
-            }
-        }
-    } catch(e) {
-        console.log(e);
-    }
-} */

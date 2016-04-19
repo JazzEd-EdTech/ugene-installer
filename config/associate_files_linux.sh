@@ -32,23 +32,29 @@ update-mime-database ~/.local/share/mime/ 2>&1 | tee -a $LOG_FILE
 
 #echo 'Adding the MIME types to the ugene.desktop file.' | tee -a $LOG_FILE
 if [ -e ~/.local/share/applications/ugene.desktop ]; then
-    cp ~/.local/share/applications/ugene.desktop ~/.local/share/applications/ugene.desktop.bak
-    grep -v "MimeType=" ~/.local/share/applications/ugene.desktop.bak|grep -v "Icon="|grep -v "Exec=" > ~/.local/share/applications/ugene.desktop
-    echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
+    cp -f ugene.desktop ~/.local/share/applications/
     echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
-    echo "MimeType=application/x-ugene-fa;application/x-ugene-uprj;application/x-ugene-uwl;application/x-ugene-uql;application/x-ugene-abi;application/x-ugene-aln;application/x-ugene-embl;application/x-ugene-sw;application/x-ugene-fastq;application/x-ugene-gb;application/x-ugene-gff;application/x-ugene-msf;application/x-ugene-newick;application/x-ugene-pdb;application/x-ugene-sam-bam;application/x-ugene-srfa;application/x-ugene-sto;application/x-ugene-db;application/x-ugene-scf;application/x-ugene-mmdb;application/x-ugene-hmm;" >>~/.local/share/applications/ugene.desktop
-    rm ~/.local/share/applications/ugene.desktop.bak
+    echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
 else
     if [ -e ~/.local/share/applications/ ]; then
-        grep -v "Icon=" ugene.desktop|grep -v "Exec=" > ~/.local/share/applications/ugene.desktop
-        echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
+	cp -f ugene.desktop ~/.local/share/applications/
         echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
+	echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
     else
         mkdir -p ~/.local/share/applications/
-        grep -v "Icon=" ugene.desktop|grep -v "Exec=" > ~/.local/share/applications/ugene.desktop
-        echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
+	cp -f ugene.desktop ~/.local/share/applications/
         echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
+	echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
     fi
 fi
+
+#echo 'Setting UGENE as default application' | tee -a $LOG_FILE
+if [ ! -e ~/.local/share/applications/defaults.list ]; then
+    touch ~/.local/share/applications/defaults.list
+    echo "[Default Applications]" >>~/.local/share/applications/defaults.list
+fi
+while read format; do
+    echo $format"=ugene.desktop" >>~/.local/share/applications/defaults.list
+done <format_list
 
 exit 0
