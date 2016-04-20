@@ -16,7 +16,7 @@
 
     <WizardStyle>Modern</WizardStyle>
     <Logo>ugene_logo_installer.png</Logo>
-    <Watermark>about.png</Watermark>
+    <!--<Watermark>about.png</Watermark>-->
     <!--<Background>background.png</Background>-->
     <!--<RemoteRepositories>
      <Repository>
