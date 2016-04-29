@@ -124,9 +124,11 @@ function Component()
         }
         if (programFiles != "") {
             installer.setValue("TargetDir", programFiles + "/UGENE");
-	}
+        }
+    } else if (systemInfo.kernelType === "darwin") {
+        installer.setValue("TargetDir", "@ApplicationsDir@/Unipro UGENE.app");
     } else {
-	installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
+        installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
     }
 
 

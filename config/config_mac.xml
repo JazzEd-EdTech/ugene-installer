@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Unipro UGENE</Name>
+    <Version>1.20.0</Version>
+    <Title>Unipro UGENE Installer</Title>
+    <Publisher>Unipro</Publisher>
+    <ProductUrl>http://ugene.net</ProductUrl>
+    <StartMenuDir>Unipro UGENE</StartMenuDir>
+    <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
+    <AllowSpaceInPath>true</AllowSpaceInPath>
+
+    <RunProgram>@TargetDir@/Contents/MacOS/ugene</RunProgram>
+    <RunProgramArguments>
+        <Argument>-ui</Argument>
+    </RunProgramArguments>
+    <WizardDefaultWidth>768</WizardDefaultWidth>
+    <WizardDefaultHeight>480</WizardDefaultHeight>
+
+    <InstallerWindowIcon>ugene_128.png</InstallerWindowIcon>
+
+    <WizardStyle>Modern</WizardStyle>
+    <Logo>ugene_logo_installer.png</Logo>
+    <!--<RemoteRepositories>
+     <Repository>
+             <Url>http://om.alteametasoft.com/repositoryUgeneMac</Url>
+             <Enabled>1</Enabled>
+             <DisplayName>UGENE general repository</DisplayName>
+     </Repository>
+    </RemoteRepositories>-->
+</Installer>

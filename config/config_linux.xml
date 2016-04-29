@@ -9,6 +9,10 @@
     <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
 
+    <RunProgram>@TargetDir@/ugene</RunProgram>
+    <RunProgramArguments>
+        <Argument>-ui</Argument>
+    </RunProgramArguments>
     <WizardDefaultWidth>768</WizardDefaultWidth>
     <WizardDefaultHeight>480</WizardDefaultHeight>
 
@@ -16,11 +20,9 @@
 
     <WizardStyle>Modern</WizardStyle>
     <Logo>ugene_logo_installer.png</Logo>
-    <!--<Watermark>about.png</Watermark>-->
-    <!--<Background>background.png</Background>-->
     <!--<RemoteRepositories>
      <Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgeneWin</Url>
+             <Url>http://om.alteametasoft.com/repositoryUgeneLin</Url>
              <Enabled>1</Enabled>
              <DisplayName>UGENE general repository</DisplayName>
      </Repository>
