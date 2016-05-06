@@ -163,7 +163,7 @@ function createShortcuts()
                                 "@StartMenuDir@/UGENECL.lnk", "workingDirectory=@TargetDir@", "/A /Q /K "+component_root_path + "/ugenecl.exe");
         // Maintaince
         component.addOperation( "CreateShortcut",
-                                component_root_path + "/maintenancetool.exe", 
+                                component_root_path + "/setup.exe", 
                                 "@StartMenuDir@/Update.lnk", "--updater");
     }
 }

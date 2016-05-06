@@ -20,6 +20,8 @@
 
     <WizardStyle>Modern</WizardStyle>
     <Logo>ugene_logo_installer.png</Logo>
+
+    <MaintenanceToolName>setup</MaintenanceToolName>
     <!--<RemoteRepositories>
      <Repository>
              <Url>http://om.alteametasoft.com/repositoryUgeneLin</Url>
