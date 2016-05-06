@@ -4,7 +4,6 @@ import os
 import platform
 import sys
 import shutil
-#import re
 
 ## Clean
 if len(sys.argv) > 1 and sys.argv[1] == "clean" :
@@ -87,6 +86,8 @@ shutil.rmtree('packages/ugene.x86_64/data/'+midPath+'data')
 #shutil.rmtree('packages/ugene.data/data/')
 shutil.copytree(os.environ.get('UGENE_x86_64_PATH')+'/'+midPath+'data','packages/ugene.data/data/'+midPath+'data')
 
+# Create empty tools folder for correct windows (un)installer work
+os.makedirs('packages/full.tools/data/'+midPath+'tools')
 # external tools 32-bit
 if platform.system() != "Darwin" :
     copy_tool("i386","bedtools2","bedtools2", True)
