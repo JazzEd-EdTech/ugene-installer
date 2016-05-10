@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
     <DisplayName>Data for the Cistrome workflow (for ChIP-Seq)</DisplayName>
-    <Description>CAP3 Sequence Assembly Program.</Description>
-    <Version>10-15-07</Version>
+    <Description>Sample data for the Cistrome workflow.</Description>
+    <Version>1.0.0</Version>
     <ReleaseDate>2010-07-15</ReleaseDate>
 </Package>
