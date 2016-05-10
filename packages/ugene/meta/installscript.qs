@@ -123,7 +123,7 @@ function Component()
             var programFiles = installer.environmentVariable("ProgramW6432");
         }
         if (programFiles != "") {
-            installer.setValue("TargetDir", programFiles + "/UGENE");
+            installer.setValue("TargetDir", programFiles + "/Unipro UGENE");
         }
     } else if (systemInfo.kernelType === "darwin") {
         installer.setValue("TargetDir", "@ApplicationsDir@/Unipro UGENE.app");
@@ -145,7 +145,7 @@ function createShortcuts()
         var component_root_path = installer.value("TargetDir");
         component_root_path = component_root_path.replace(/\//g, "\\");
 
-    	var windir = installer.environmentVariable("WINDIR");
+        var windir = installer.environmentVariable("WINDIR");
         if (windir == "") {
             QMessageBox["warning"]( "Error" , "Error", "Could not find windows installation directory");
             return;
@@ -173,7 +173,7 @@ function registerFileTypes()
     if (systemInfo.kernelType === "winnt") {
         var component_root_path = installer.value("TargetDir");
         component_root_path = component_root_path.replace(/\//g, "\\");
-	var ugeneuiPath = component_root_path + "\\ugeneui.exe";
+        var ugeneuiPath = component_root_path + "\\ugeneui.exe";
 
         //Project file
         component.addOperation("RegisterFileType",   "uprj",   ugeneuiPath + " %1", "Unipro UGENE project file", "text/plain", ugeneuiPath + ",0");
@@ -254,7 +254,7 @@ function registerFileTypes()
         //UGENE Workflow format
         component.addOperation("RegisterFileType",   "uwl", ugeneuiPath + " %1", "UGENE Workflow Language", "text/plain", ugeneuiPath + ",1");
     }
-	if (systemInfo.kernelType == "linux") {
-		component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
-	}
+    if (systemInfo.kernelType == "linux") {
+        component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
+    }
 }
