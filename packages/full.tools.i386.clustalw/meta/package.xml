@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
-    <DisplayName>ClustalW2</DisplayName>
-    <Description>ClustalW2 is a general purpose DNA or protein multiple sequence alignment program for three or more sequences.</Description>
+    <DisplayName>ClustalW</DisplayName>
+    <Description>ClustalW is a general purpose DNA or protein multiple sequence alignment program for three or more sequences.</Description>
     <Version>2.1</Version>
     <ReleaseDate>2016-02-02</ReleaseDate>
     <Licenses>

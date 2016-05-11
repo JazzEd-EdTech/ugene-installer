@@ -83,7 +83,7 @@ function Component()
             validOs = true;
     } else if (systemInfo.kernelType === "darwin") {
         if (majorVersion(systemInfo.kernelVersion) >= 11)
-            validOs = true;
+            validOs = false;
     } else {
         validOs = true;
     }

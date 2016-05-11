@@ -8,6 +8,7 @@
     <StartMenuDir>Unipro UGENE</StartMenuDir>
     <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
 
     <RunProgram>@TargetDir@/Contents/MacOS/ugene</RunProgram>
     <RunProgramArguments>

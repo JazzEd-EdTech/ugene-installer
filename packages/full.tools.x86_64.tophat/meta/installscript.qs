@@ -80,7 +80,7 @@ function Component()
 
     if (systemInfo.kernelType === "winnt") {
         if (majorVersion(systemInfo.kernelVersion) >= 6)
-            validOs = true;
+            validOs = false;
     } else if (systemInfo.kernelType === "darwin") {
         if (majorVersion(systemInfo.kernelVersion) >= 11)
             validOs = true;

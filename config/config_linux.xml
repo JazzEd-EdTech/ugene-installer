@@ -8,6 +8,7 @@
     <StartMenuDir>Unipro UGENE</StartMenuDir>
     <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
 
     <RunProgram>@TargetDir@/ugene</RunProgram>
     <RunProgramArguments>
@@ -22,11 +23,11 @@
     <Logo>ugene_logo_installer.png</Logo>
 
     <MaintenanceToolName>setup</MaintenanceToolName>
-    <!--<RemoteRepositories>
+    <RemoteRepositories>
      <Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgeneLin</Url>
+             <Url>http://om.alteametasoft.com/repositoryUgeneLinux</Url>
              <Enabled>1</Enabled>
              <DisplayName>UGENE general repository</DisplayName>
      </Repository>
-    </RemoteRepositories>-->
+    </RemoteRepositories>
 </Installer>

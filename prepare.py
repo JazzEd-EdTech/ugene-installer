@@ -139,13 +139,12 @@ copy_tool("x86_64","tcoffee","t-coffee",True)
 copy_tool("none","snpEff","snpEff",True)
 copy_tool("none","vcftools","vcftools",True)
 
-# cistrome data
-os.makedirs('packages/NGS.cistrome/data/'+midPath+'data')
-shutil.copytree(os.environ.get('CISTROME_PATH'),'packages/NGS.cistrome/data/'+midPath+'data/cistrome')
-
 # rscript
 os.makedirs('packages/NGS.RScript/data/'+midPath+'tools')
 rver = os.environ.get('RSCRIPT_PATH').split('-')
 rver = rver[len(rver)-1]
 shutil.copytree(os.environ.get('RSCRIPT_PATH'),'packages/NGS.RScript/data/'+midPath+'tools/R-'+rver)
 
+# cistrome data
+os.makedirs('packages/NGS.cistrome/data/'+midPath+'data')
+shutil.copytree(os.environ.get('CISTROME_PATH'),'packages/NGS.cistrome/data/'+midPath+'data/cistrome')
