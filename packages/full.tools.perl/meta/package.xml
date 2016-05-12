@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Perl</DisplayName>
+    <Description>Perl is a highly capable, feature-rich programming language.</Description>
+    <Version>5.10.0.5</Version>
+    <ReleaseDate>2013-06-24</ReleaseDate>
+    <Licenses>
+        <License name="Perl: The Artistic License" file="license.txt" />
+    </Licenses>
+    <Script>installscript.qs</Script>
+    <Virtual>true</Virtual>
+    <SortingPriority>68</SortingPriority>
+</Package>
