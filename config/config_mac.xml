@@ -10,10 +10,7 @@
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
 
-    <RunProgram>@TargetDir@/Contents/MacOS/ugene</RunProgram>
-    <RunProgramArguments>
-        <Argument>-ui</Argument>
-    </RunProgramArguments>
+    <RunProgram>@TargetDir@/Contents/MacOS/ugeneui</RunProgram>
     <WizardDefaultWidth>768</WizardDefaultWidth>
     <WizardDefaultHeight>480</WizardDefaultHeight>
 

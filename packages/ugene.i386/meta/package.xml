@@ -3,8 +3,7 @@
     <DisplayName>UGENE executables (32-bit)</DisplayName>
     <Description>Install this example.</Description>
     <Default>true</Default>
-    <Version>0.1.0-1</Version>
-    <ReleaseDate>2010-09-21</ReleaseDate>
+    <Version>1.23.0</Version>
+    <ReleaseDate>2016-05-12</ReleaseDate>
     <SortingPriority>100</SortingPriority>
-    <ForcedInstallation>true</ForcedInstallation>
 </Package>
