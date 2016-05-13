@@ -9,4 +9,5 @@
     </Licenses>
     <Default>true</Default>
     <SortingPriority>78</SortingPriority>
+    <Dependencies>full.tools.x86_64.python</Dependencies>
 </Package>
