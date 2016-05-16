@@ -6,7 +6,7 @@
     <Publisher>Unipro</Publisher>
     <ProductUrl>http://ugene.net</ProductUrl>
     <StartMenuDir>Unipro UGENE</StartMenuDir>
-    <TargetDir>@HomeDir@/Unipro UGENE</TargetDir>
+    <TargetDir>@ApplicationsDir@/Unipro UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
 
@@ -28,4 +28,7 @@
              <DisplayName>UGENE general repository</DisplayName>
      </Repository>
     </RemoteRepositories>-->
+    <ControlScript>controller.js</ControlScript>
+    <!-- Only for local testing-->
+    <!--<CreateLocalRepository>true</CreateLocalRepository>-->
 </Installer>
