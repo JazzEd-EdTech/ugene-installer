@@ -114,24 +114,6 @@ function Component()
         installer.componentByName("ugene.x86_64").setValue("Default", "true");
         installer.componentByName("ugene.x86_64").setValue("ForcedInstallation", "true");
     }
-
-    if (systemInfo.kernelType === "winnt") {
-        if ( systemInfo.currentCpuArchitecture === "i386") {
-            var programFiles = installer.environmentVariable("ProgramFiles");
-        }
-        if ( systemInfo.currentCpuArchitecture === "x86_64") {
-            var programFiles = installer.environmentVariable("ProgramW6432");
-        }
-        if (programFiles != "") {
-            installer.setValue("TargetDir", programFiles + "/Unipro UGENE");
-        }
-    } else if (systemInfo.kernelType === "darwin") {
-        installer.setValue("TargetDir", "@ApplicationsDir@/Unipro UGENE.app");
-    } else {
-        installer.setValue("TargetDir", "@ApplicationsDir@/UGENE");
-    }
-
-
 }
 Component.prototype.createOperations = function()
 {

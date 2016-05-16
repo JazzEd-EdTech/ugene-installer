@@ -88,11 +88,6 @@ function Component()
         validOs = true;
     }
 
-    if (!validOs) {
-        cancelInstaller("Installation on " + systemInfo.prettyProductName + " is not supported");
-        return;
-    }
-
     //
     // Hide/select packages based on architecture
     //
@@ -104,7 +99,7 @@ function Component()
     installer.componentByName("full.tools.x86_64.tophat").setValue("Virtual", "true");
     installer.componentByName("full.tools.x86_64.tophat").setValue("Default", "false");
 
-    if ( systemInfo.currentCpuArchitecture === "x86_64") {
+    if (validOs && systemInfo.currentCpuArchitecture === "x86_64") {
         installer.componentByName("full.tools.x86_64.tophat").setValue("Virtual", "false");
         installer.componentByName("full.tools.x86_64.tophat").setValue("Default", "true");
     }
