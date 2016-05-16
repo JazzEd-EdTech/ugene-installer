@@ -133,6 +133,7 @@ copy_tool("x86_64","SPAdes","SPAdes",True)
 copy_tool("x86_64","tophat","tophat",True)
 #bad named tools
 copy_tool("x86_64","CAP3","CAP3",False)
+copy_tool("x86_64","cistrome","cistrome",False)
 copy_tool("x86_64","python","python",False)
 copy_tool("x86_64","spidey","spidey",False)
 copy_tool("x86_64","tcoffee","t-coffee",True)
