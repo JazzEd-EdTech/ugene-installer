@@ -23,10 +23,10 @@ if os.environ.get('UGENE_PATH') == None :
 if os.environ.get('EXT_TOOLS_PATH') == None :
     print "EXT_TOOLS_PATH does not set."
     exit(1)
-if !is32bit and os.environ.get('CISTROME_PATH') == None :
+if not is32bit and os.environ.get('CISTROME_PATH') == None :
     print "CISTROME_PATH does not set."
     exit(1)
-if !is32bit and os.environ.get('RSCRIPT_PATH') == None :
+if not is32bit and os.environ.get('RSCRIPT_PATH') == None :
     print "RSCRIPT_PATH does not set."
     exit(1)
 
@@ -43,14 +43,14 @@ def copy_tool(installerToolName, repoToolName, needRegExp):
     toolName=repoToolName
     basePath=os.environ.get('EXT_TOOLS_PATH')
     if needRegExp :
-       for f in os.listdir(basePath):
-           if repoToolName in f:
-               toolName=f
-       print toolName
+      for f in os.listdir(basePath):
+        if repoToolName in f:
+          toolName=f
+      print toolName
       if os.access(basePath+"/"+toolName, os.F_OK):
-       shutil.copytree(basePath+"/"+toolName,'packages/full.tools.'+installerToolName+'/data/'+midPath+'tools/'+toolName)
+        shutil.copytree(basePath+"/"+toolName,'packages/full.tools.'+installerToolName+'/data/'+midPath+'tools/'+toolName)
       else:
-       print "Warning: Tool "+basePath+"/"+toolName+" not exist"
+        print "Warning: Tool "+basePath+"/"+toolName+" not exist"
     return
 
 
