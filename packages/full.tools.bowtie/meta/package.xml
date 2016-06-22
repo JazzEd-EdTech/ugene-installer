@@ -7,7 +7,6 @@
     <Licenses>
         <License name="Bowtie: The Artistic License" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>92</SortingPriority>
 </Package>

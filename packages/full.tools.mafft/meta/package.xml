@@ -9,7 +9,6 @@
         <License name="MAFFT: The BSD license" file="license.txt" />
         <License name="MAFFT: MAFFT extentions licenses" file="license.extensions.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>74</SortingPriority>
 </Package>

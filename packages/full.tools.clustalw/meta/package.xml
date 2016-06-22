@@ -7,7 +7,6 @@
     <Licenses>
         <License name="ClustalW2: GNU LGPLv3" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>82</SortingPriority>
 </Package>

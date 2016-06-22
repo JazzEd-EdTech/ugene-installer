@@ -17,6 +17,10 @@ function Component()
     //
     // If the kernel version is older we move directly
     // to the final page & show an error.
+    //
+    // For Linux, we check the distribution and version, but only
+    // show a warning if it does not match our preferred distribution.
+    //
 
     // start installer with -v to see debug output
     console.log("OS: " + systemInfo.productType);
@@ -26,9 +30,12 @@ function Component()
 
     if (systemInfo.kernelType === "winnt") {
         if (majorVersion(systemInfo.kernelVersion) >= 6)
+            validOs = false;
+    } else if (systemInfo.kernelType === "darwin") {
+        if (majorVersion(systemInfo.kernelVersion) >= 11)
             validOs = true;
     } else {
-        validOs = false;
+        validOs = true;
     }
 
     //
@@ -39,11 +46,11 @@ function Component()
     //
     console.log("CPU Architecture: " +  systemInfo.currentCpuArchitecture);
 
-    installer.componentByName("full.tools.perl").setValue("Virtual", "true");
-    installer.componentByName("full.tools.perl").setValue("Default", "false");
+    installer.componentByName("full.tools.tophat").setValue("Virtual", "true");
+    installer.componentByName("full.tools.tophat").setValue("Default", "false");
 
-    if (validOs) {
-        installer.componentByName("full.tools.perl").setValue("Virtual", "false");
-        installer.componentByName("full.tools.perl").setValue("Default", "true");
+    if (validOs && systemInfo.currentCpuArchitecture === "x86_64") {
+        installer.componentByName("full.tools.tophat").setValue("Virtual", "false");
+        installer.componentByName("full.tools.tophat").setValue("Default", "true");
     }
 }

@@ -80,10 +80,10 @@ function Component()
 
     if (systemInfo.kernelType === "winnt") {
         if (majorVersion(systemInfo.kernelVersion) >= 6)
-            validOs = true;
+            validOs = false;
     } else if (systemInfo.kernelType === "darwin") {
         if (majorVersion(systemInfo.kernelVersion) >= 11)
-            validOs = false;
+            validOs = true;
     } else {
         validOs = true;
     }
@@ -96,11 +96,11 @@ function Component()
     //
     console.log("CPU Architecture: " +  systemInfo.currentCpuArchitecture);
 
-    installer.componentByName("full.tools.spidey").setValue("Virtual", "true");
-    installer.componentByName("full.tools.spidey").setValue("Default", "false");
+    installer.componentByName("full.tools.SPAdes").setValue("Virtual", "true");
+    installer.componentByName("full.tools.SPAdes").setValue("Default", "false");
 
-    if (validOs) {
-        installer.componentByName("full.tools.spidey").setValue("Virtual", "false");
-        installer.componentByName("full.tools.spidey").setValue("Default", "true");
+    if (validOs && systemInfo.currentCpuArchitecture === "x86_64") {
+        installer.componentByName("full.tools.SPAdes").setValue("Virtual", "false");
+        installer.componentByName("full.tools.SPAdes").setValue("Default", "true");
     }
 }

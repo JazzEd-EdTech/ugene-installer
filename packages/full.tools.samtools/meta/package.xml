@@ -7,7 +7,6 @@
     <Licenses>
         <License name="SAMtools: The MIT/Expat License" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>66</SortingPriority>
 </Package>

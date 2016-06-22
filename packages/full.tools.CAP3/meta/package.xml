@@ -7,7 +7,6 @@
     <Licenses>
         <License name="CAP3: Non-Commercial Use" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>86</SortingPriority>
 </Package>

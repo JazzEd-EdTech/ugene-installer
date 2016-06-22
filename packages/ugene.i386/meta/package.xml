@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package>
-    <DisplayName>UGENE executables (32-bit)</DisplayName>
-    <Description>Install this example.</Description>
-    <Default>true</Default>
-    <Version>1.23.0</Version>
-    <ReleaseDate>2016-05-12</ReleaseDate>
-    <SortingPriority>100</SortingPriority>
-</Package>

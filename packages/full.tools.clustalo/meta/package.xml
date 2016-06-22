@@ -9,7 +9,6 @@
     <Licenses>
         <License name="ClustalO: GNU GPLv2" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>84</SortingPriority>
 </Package>

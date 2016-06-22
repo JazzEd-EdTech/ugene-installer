@@ -7,7 +7,6 @@
     <Licenses>
         <License name="Bowtie2: GNU GPLv3" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>90</SortingPriority>
 </Package>

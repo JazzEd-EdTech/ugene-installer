@@ -7,7 +7,6 @@
     <Licenses>
         <License name="Python: Python Software Foundation License" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>68</SortingPriority>
 </Package>

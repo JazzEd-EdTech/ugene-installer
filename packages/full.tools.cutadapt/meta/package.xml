@@ -7,7 +7,7 @@
     <Licenses>
         <License name="Cutadapt: The MIT License" file="license.txt" />
     </Licenses>
-    <Script>installscript.qs</Script>
-    <Virtual>true</Virtual>
+    <Default>true</Default>
     <SortingPriority>78</SortingPriority>
+    <Dependencies>full.tools.i386.python</Dependencies>
 </Package>

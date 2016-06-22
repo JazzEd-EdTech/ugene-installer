@@ -92,28 +92,6 @@ function Component()
         cancelInstaller("Installation on " + systemInfo.prettyProductName + " is not supported");
         return;
     }
-
-    //
-    // Hide/select packages based on architecture
-    //
-    // Marking a component as "Virtual" will hide it in the UI.
-    // Marking a component with "Default" will check it.
-    //
-    console.log("CPU Architecture: " +  systemInfo.currentCpuArchitecture);
-
-    installer.componentByName("ugene.i386").setValue("Virtual", "true");
-    installer.componentByName("ugene.x86_64").setValue("Virtual", "true");
-
-    if ( systemInfo.currentCpuArchitecture === "i386") {
-        installer.componentByName("ugene.i386").setValue("Virtual", "false");
-        installer.componentByName("ugene.i386").setValue("Default", "true");
-        installer.componentByName("ugene.i386").setValue("ForcedInstallation", "true");
-    }
-    if ( systemInfo.currentCpuArchitecture === "x86_64") {
-        installer.componentByName("ugene.x86_64").setValue("Virtual", "false");
-        installer.componentByName("ugene.x86_64").setValue("Default", "true");
-        installer.componentByName("ugene.x86_64").setValue("ForcedInstallation", "true");
-    }
 }
 Component.prototype.createOperations = function()
 {
