@@ -25,9 +25,14 @@
     <MaintenanceToolName>setup</MaintenanceToolName>
     <RemoteRepositories>
      <Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgeneLinux</Url>
+             <Url>http://ugene.net/downloads/repoLin64</Url>
              <Enabled>1</Enabled>
              <DisplayName>UGENE general repository</DisplayName>
      </Repository>
+     <!--<Repository>
+             <Url>http://om.alteametasoft.com/repositoryUgeneLinux</Url>
+             <Enabled>1</Enabled>
+             <DisplayName>UGENE additional repository</DisplayName>
+     </Repository>-->
     </RemoteRepositories>
 </Installer>

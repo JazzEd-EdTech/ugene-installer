@@ -13,6 +13,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "clean" :
             shutil.rmtree('packages/'+f+'/data/')
     exit()
 
+is32bit=False;
 if len(sys.argv) > 1 and sys.argv[1] == "x32" :
     is32bit=True;
 
@@ -56,8 +57,8 @@ def copy_tool(installerToolName, repoToolName, needRegExp):
 
 # ugene binaries
 #shutil.rmtree('packages/ugene.x86_64/data')
-shutil.copytree(os.environ.get('UGENE_PATH'),'packages/ugene/data/')
-shutil.rmtree('packages/ugene/data/'+midPath+'data')
+shutil.copytree(os.environ.get('UGENE_PATH'),'packages/ugene.ugene/data/')
+shutil.rmtree('packages/ugene.ugene/data/'+midPath+'data')
 # ugene data
 #shutil.rmtree('packages/ugene.data/data/')
 shutil.copytree(os.environ.get('UGENE_PATH')+'/'+midPath+'data','packages/ugene.data/data/'+midPath+'data')

@@ -92,6 +92,11 @@ function Component()
         cancelInstaller("Installation on " + systemInfo.prettyProductName + " is not supported");
         return;
     }
+/*    if (validOs && systemInfo.currentCpuArchitecture === "x86_64") {
+        //cancelInstaller("Installation on " + systemInfo.prettyProductName + " is not supported");
+        QMessageBox["warning"]( "Error" , "Error", "Could not find windows installation directory");
+        return;
+    }*/
 }
 Component.prototype.createOperations = function()
 {

@@ -9,5 +9,5 @@
     </Licenses>
     <Default>true</Default>
     <SortingPriority>78</SortingPriority>
-    <Dependencies>full.tools.i386.python</Dependencies>
+    <Dependencies>full.tools.python</Dependencies>
 </Package>

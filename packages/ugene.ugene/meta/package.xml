@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package>
-    <DisplayName>Standard package</DisplayName>
-    <Description>Standard package contains executables and data of Unipro UGENE.</Description>
+    <DisplayName>UGENE executables</DisplayName>
+    <Description>UGENE executables.</Description>
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
     <Version>1.23.0</Version>
@@ -10,5 +10,4 @@
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
     <SortingPriority>100</SortingPriority>
-    <Script>installscript.qs</Script>
 </Package>
