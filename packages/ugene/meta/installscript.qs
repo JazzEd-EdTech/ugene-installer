@@ -219,7 +219,7 @@ function registerFileTypes()
         //UGENE Workflow format
         component.addOperation("RegisterFileType",   "uwl", ugeneuiPath + " %1", "UGENE Workflow Language", "text/plain", ugeneuiPath + ",1");
     }
-    if (systemInfo.kernelType == "linux") {
+    /*if (systemInfo.kernelType == "linux") {
         component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
-    }
+    }*/
 }
