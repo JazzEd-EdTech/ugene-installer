@@ -33,17 +33,17 @@ update-mime-database ~/.local/share/mime/ 2>&1 | tee -a $LOG_FILE
 #echo 'Adding the MIME types to the ugene.desktop file.' | tee -a $LOG_FILE
 if [ -e ~/.local/share/applications/ugene.desktop ]; then
     cp -f ugene.desktop ~/.local/share/applications/
-    echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
+    echo "Exec=$UGENE_BIN_PATH/ugene -ui %F" >>~/.local/share/applications/ugene.desktop
     echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
 else
     if [ -e ~/.local/share/applications/ ]; then
 	cp -f ugene.desktop ~/.local/share/applications/
-        echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
+        echo "Exec=$UGENE_BIN_PATH/ugene -ui  %F" >>~/.local/share/applications/ugene.desktop
 	echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
     else
         mkdir -p ~/.local/share/applications/
 	cp -f ugene.desktop ~/.local/share/applications/
-        echo "Exec=$UGENE_BIN_PATH/ugene -ui" >>~/.local/share/applications/ugene.desktop
+        echo "Exec=$UGENE_BIN_PATH/ugene -ui  %F" >>~/.local/share/applications/ugene.desktop
 	echo "Icon=$HOME/.local/share/pixmaps/ugene.png" >>~/.local/share/applications/ugene.desktop
     fi
 fi
