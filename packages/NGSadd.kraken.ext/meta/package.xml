@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Package>
+	<DisplayName>Kraken external tools</DisplayName>
+	<Description>Kraken external tools</Description>
+	<Dependencies>NGSadd.taxonomy</Dependencies>
+	<Version>1.0.0</Version>
+	<ReleaseDate>2017-12-11</ReleaseDate>
+	<Licenses>
+		<License name="Kraken license" file="license.txt" />
+	</Licenses>
+	<SortingPriority>100</SortingPriority>
+</Package>
+

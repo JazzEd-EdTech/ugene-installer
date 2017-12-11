@@ -9,6 +9,7 @@
     <TargetDir>@ApplicationsDir@/UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+    <InstallActionColumnVisible>true</InstallActionColumnVisible>
 
     <RunProgram>@TargetDir@/ugene</RunProgram>
     <RunProgramArguments>
