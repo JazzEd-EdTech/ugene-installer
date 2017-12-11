@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>External tools</DisplayName>
     <Description>External tools.</Description>
-    <Version>1.23.0</Version>
-    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Version>1.28.1</Version>
+    <ReleaseDate>2017-11-21</ReleaseDate>
     <SortingPriority>90</SortingPriority>
     <Default>true</Default>
     <Script>installscript.qs</Script>

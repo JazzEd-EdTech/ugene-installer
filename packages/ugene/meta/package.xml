@@ -4,8 +4,8 @@
     <Description>Standard package contains executables and data of Unipro UGENE.</Description>
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
-    <Version>1.23.0</Version>
-    <ReleaseDate>2016-05-12</ReleaseDate>
+    <Version>1.28.1</Version>
+    <ReleaseDate>2017-11-21</ReleaseDate>
     <Licenses>
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
