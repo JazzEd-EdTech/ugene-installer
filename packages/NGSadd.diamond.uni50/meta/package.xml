@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Package>
-	<DisplayName>UniRef50 (size Gb)</DisplayName>
+	<DisplayName>UniRef50</DisplayName>
 	<Description>UniRef50</Description>
 	<Dependencies>NGSadd.taxonomy</Dependencies>
 	<Version>1.0.0</Version>

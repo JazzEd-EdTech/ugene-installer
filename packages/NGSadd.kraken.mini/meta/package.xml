@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Package>
-	<DisplayName>MiniKraken database (size Gb)</DisplayName>
+	<DisplayName>MiniKraken database</DisplayName>
 	<Description>MiniKraken database</Description>
 	<Dependencies>NGSadd.taxonomy</Dependencies>
 	<Version>1.0.0</Version>
