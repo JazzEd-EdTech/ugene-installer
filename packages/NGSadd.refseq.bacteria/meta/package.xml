@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Package>
+	<DisplayName>Bacterial genomes</DisplayName>
+	<Description>Bacterial genomes</Description>
+	<Dependencies>NGSadd.taxonomy</Dependencies>
+	<Version>1.0.0</Version>
+	<ReleaseDate>2017-12-11</ReleaseDate>
+	<SortingPriority>100</SortingPriority>
+</Package>
+

@@ -4,22 +4,15 @@ Installer for UGENE based on Qt installer framework
 ###Preparing packages data
 Set up environment:
 ```
-UGENE_i386_PATH
-UGENE_x86_64_PATH
-EXT_TOOLS_i386_PATH
-EXT_TOOLS_x86_64_PATH
+UGENE_PATH
+EXT_TOOLS_PATH
 CISTROME_PATH
 RSCRIPT_PATH
 ```
-Linux:
+Linux, Mac OS X:
 ```
-./prepare.sh clean
-./prepare.sh
-```
-Mac OS X:
-```
-./prepare-mac.sh clean
-./prepare-mac.sh
+./prepare.py clean
+./prepare.py
 ```
 
 ###Create installer

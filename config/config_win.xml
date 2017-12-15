@@ -9,6 +9,7 @@
     <TargetDir>@ApplicationsDir@/Unipro UGENE</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+    <InstallActionColumnVisible>true</InstallActionColumnVisible>
 
     <RunProgram>@TargetDir@/ugeneui.exe</RunProgram>
 
