@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>Unipro UGENE</Name>
-    <Version>1.23.0</Version>
+    <Version>1.30.0</Version>
     <Title>Unipro UGENE Installer</Title>
     <Publisher>Unipro</Publisher>
     <ProductUrl>http://ugene.net</ProductUrl>
@@ -20,20 +20,17 @@
 
     <InstallerWindowIcon>ugene_128.png</InstallerWindowIcon>
 
+    <ControlScript>controller.js</ControlScript>
+
     <WizardStyle>Modern</WizardStyle>
     <Logo>ugene_logo_installer.png</Logo>
 
     <MaintenanceToolName>setup</MaintenanceToolName>
     <RemoteRepositories>
-     <Repository>
-             <Url>http://ugene.net/downloads/repoLin64</Url>
-             <Enabled>1</Enabled>
-             <DisplayName>UGENE general repository</DisplayName>
-     </Repository>
-     <!--<Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgeneLinux</Url>
-             <Enabled>1</Enabled>
-             <DisplayName>UGENE additional repository</DisplayName>
-     </Repository>-->
+        <Repository>
+            <Url>http://ugene.net/downloads/repoLin64</Url>
+            <Enabled>1</Enabled>
+            <DisplayName>UGENE general repository</DisplayName>
+        </Repository>
     </RemoteRepositories>
 </Installer>

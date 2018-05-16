@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>Unipro UGENE</Name>
-    <Version>1.23.0</Version>
+    <Version>1.30.0</Version>
     <Title>Unipro UGENE Installer</Title>
     <Publisher>Unipro</Publisher>
     <ProductUrl>http://ugene.net</ProductUrl>
     <StartMenuDir>Unipro UGENE</StartMenuDir>
-    <TargetDir>@ApplicationsDir@/Unipro UGENE</TargetDir>
+    <TargetDir>@ApplicationsDir@/Unipro UGENE.app</TargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
     <InstallActionColumnVisible>true</InstallActionColumnVisible>
@@ -17,15 +17,17 @@
 
     <InstallerWindowIcon>ugene_128.png</InstallerWindowIcon>
 
+    <ControlScript>controller.js</ControlScript>
+
     <WizardStyle>Modern</WizardStyle>
     <Logo>ugene_logo_installer.png</Logo>
 
     <MaintenanceToolName>setup</MaintenanceToolName>
-    <!--<RemoteRepositories>
-     <Repository>
-             <Url>http://om.alteametasoft.com/repositoryUgeneMac</Url>
-             <Enabled>1</Enabled>
-             <DisplayName>UGENE general repository</DisplayName>
-     </Repository>
-    </RemoteRepositories>-->
+    <RemoteRepositories>
+        <Repository>
+            <Url>http://ugene.net/downloads/repoMac64</Url>
+            <Enabled>1</Enabled>
+            <DisplayName>UGENE general repository</DisplayName>
+        </Repository>
+    </RemoteRepositories>
 </Installer>
