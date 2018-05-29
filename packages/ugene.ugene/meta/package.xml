@@ -10,4 +10,5 @@
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
     <SortingPriority>100</SortingPriority>
+    <Script>installscript.qs</Script>
 </Package>
