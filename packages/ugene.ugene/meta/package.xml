@@ -4,8 +4,8 @@
     <Description>UGENE executables.</Description>
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
-    <Version>1.28.1</Version>
-    <ReleaseDate>2017-11-21</ReleaseDate>
+    <Version>1.30.0</Version>
+    <ReleaseDate>2018-05-31</ReleaseDate>
     <Licenses>
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
