@@ -6,7 +6,7 @@
     <Virtual>true</Virtual>
     <Essential>true</Essential>
     <Version>3.0.3.1</Version>
-    <ReleaseDate>2018-05-28</ReleaseDate>
+    <ReleaseDate>2018-05-31</ReleaseDate>
     <SortingPriority>100</SortingPriority>
     <Script>installscript.qs</Script>
     <DownloadableArchives>content.7z</DownloadableArchives>
