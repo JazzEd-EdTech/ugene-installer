@@ -13,13 +13,6 @@ function finalizeInstallerUpdating() {
     console.log("Installer update finalization");
 
     if (installer.value(IS_UPDATER, false) == "true") {
-        // Continue the UGENE updating from the place where the installer updating interrupt the process
-        installer.setUpdater();
-        if (installer.isUpdater()) {
-            installer.setDefaultPageVisible(QInstaller.Introduction, false);
-            installer.setDefaultPageVisible(QInstaller.TargetDirectory, false);
-        }
-
         installer.setValue(IS_UPDATER, false);
     }
 
