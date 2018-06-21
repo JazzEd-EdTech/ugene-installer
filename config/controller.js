@@ -15,7 +15,8 @@ function Controller() {
 Controller.prototype.IntroductionPageCallback = function() {
     if (isInstallerUpdatingInProgress()) {
         console.log("Skip introduction page");
-        gui.clickButton(buttons.NextButton); // automatically click the Next button
+        gui.findChild(gui.currentPageWidget(), "UpdaterRadioButton").checked = true;
+        gui.clickButton(buttons.NextButton);
     }
 }
 
