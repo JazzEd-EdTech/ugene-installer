@@ -4,11 +4,10 @@
     <Description>UGENE executables.</Description>
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
-    <Version>1.30.0</Version>
-    <ReleaseDate>2018-05-31</ReleaseDate>
+    <Version>1.30.0.2</Version>
+    <ReleaseDate>2018-06-21</ReleaseDate>
     <Licenses>
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
     <SortingPriority>100</SortingPriority>
-    <Script>installscript.qs</Script>
 </Package>

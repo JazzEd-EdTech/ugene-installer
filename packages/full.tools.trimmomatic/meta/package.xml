@@ -3,7 +3,7 @@
     <DisplayName>Trimmomatic</DisplayName>
     <Description>Trimmomatic is a flexible read trimming tool for Illumina NGS data.</Description>
     <Version>0.38</Version>
-    <ReleaseDate>2018-05-25</ReleaseDate>
+    <ReleaseDate>2013-05-25</ReleaseDate>
     <Licenses>
         <License name="Trimmomatic: GNU GPLv3" file="license.txt" />
     </Licenses>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Package>
+	<DisplayName>Improve classification with WEVOTE</DisplayName>
+	<Description>Improve Classification with WEVOTE</Description>
+	<Version>1.0.0.6</Version>
+	<ReleaseDate>2018-06-21</ReleaseDate>
+	<SortingPriority>50</SortingPriority>
+</Package>
+

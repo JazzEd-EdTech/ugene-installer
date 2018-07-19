@@ -2,8 +2,8 @@
 <Package>
 	<DisplayName>Classification with CLARK</DisplayName>
 	<Description>Classification with CLARK</Description>
-	<Version>1.0.0</Version>
-	<ReleaseDate>2017-12-11</ReleaseDate>
+	<Version>1.0.0.8</Version>
+	<ReleaseDate>2018-06-21</ReleaseDate>
 	<SortingPriority>70</SortingPriority>
 </Package>
 
