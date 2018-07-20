@@ -2,7 +2,7 @@
 <Package>
 	<DisplayName>RefSeq viral genomes database</DisplayName>
 	<Description>Check this component to download a database with NCBI RefSeq viral data for CLARK-l used with the default parameters.</Description>
-	<Dependencies>ngs_classification.refseq.viral</Dependencies>
+	<Dependencies>ngs_classification.taxonomy</Dependencies>
 	<Version>1.0.0</Version>
 	<ReleaseDate>2017-12-11</ReleaseDate>
 	<SortingPriority>90</SortingPriority>
