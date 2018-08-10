@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Package>
-	<DisplayName>NGS additions: taxonomy classification</DisplayName>
+	<DisplayName>NGS additions: metagenomics classification</DisplayName>
 	<Description>The component contains external tools and reference data for taxonomy classification of metagenomic whole-genome shotgun sequencing data.</Description>
 	<Version>1.0.0</Version>
 	<ReleaseDate>2017-12-08</ReleaseDate>
