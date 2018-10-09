@@ -5,7 +5,7 @@
     <Default>true</Default>
     <Version>1.31.0</Version>
     <Dependencies>ugene</Dependencies>
-    <ReleaseDate>2018-08-06</ReleaseDate>
+    <ReleaseDate>2018-08-17</ReleaseDate>
     <SortingPriority>100</SortingPriority>
     <ForcedInstallation>true</ForcedInstallation>
     <Script>installscript.qs</Script>

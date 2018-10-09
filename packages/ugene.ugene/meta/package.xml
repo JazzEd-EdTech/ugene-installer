@@ -5,7 +5,7 @@
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
     <Version>1.31.0</Version>
-    <ReleaseDate>2018-08-06</ReleaseDate>
+    <ReleaseDate>2018-08-17</ReleaseDate>
     <Licenses>
         <License name="UGENE: GNU GPLv2" file="license.txt" />
     </Licenses>
