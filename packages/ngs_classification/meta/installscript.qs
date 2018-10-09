@@ -2,7 +2,7 @@ function Component() {
 	var visible = systemInfo.currentCpuArchitecture === 'x86_64'
 		&& (systemInfo.kernelType === 'linux' || systemInfo.kernelType === 'darwin');
 
-	installer.componentByName("NGSadd").setValue("Virtual", '' + !visible); // Virtual == hidden
+	installer.componentByName("ngs_classification").setValue("Virtual", '' + !visible); // Virtual == hidden
 }
 /*
 Component.prototype.createOperations = function() {

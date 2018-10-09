@@ -2,7 +2,7 @@
 <Package>
 	<DisplayName>Classification with WEVOTE</DisplayName>
 	<Description>WEVOTE (WEighted VOting Taxonomic idEntification) is a tool for taxonomy classification of metagenomic NGS data, based on an ensemble of other classification methods (Kraken, CLARK, etc.).</Description>
-	<Version>1.0.0.6</Version>
-	<ReleaseDate>2018-06-21</ReleaseDate>
-	<SortingPriority>65</SortingPriority>
+	<Version>1.31.0</Version>
+	<ReleaseDate>2018-08-17</ReleaseDate>
+	<SortingPriority>60</SortingPriority>
 </Package>

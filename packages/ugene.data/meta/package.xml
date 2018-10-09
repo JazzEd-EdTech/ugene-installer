@@ -3,9 +3,9 @@
     <DisplayName>Data folder</DisplayName>
     <Description>Data folder with examples of various data.</Description>
     <Default>true</Default>
-    <Version>1.30.0</Version>
+    <Version>1.31.0</Version>
     <Dependencies>ugene</Dependencies>
-    <ReleaseDate>2018-05-31</ReleaseDate>
+    <ReleaseDate>2018-08-17</ReleaseDate>
     <SortingPriority>100</SortingPriority>
     <ForcedInstallation>true</ForcedInstallation>
     <Script>installscript.qs</Script>

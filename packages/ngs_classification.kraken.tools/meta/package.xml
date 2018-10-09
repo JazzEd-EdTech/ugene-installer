@@ -4,7 +4,7 @@
 	<Description>Check this component to install Kraken executables.</Description>
 	<Dependencies>ngs_classification.taxonomy</Dependencies>
 	<Version>1.0.0</Version>
-	<ReleaseDate>2017-12-11</ReleaseDate>
+	<ReleaseDate>2017-10-20</ReleaseDate>
 	<Licenses>
 		<License name="Kraken license" file="license.txt" />
 	</Licenses>
