@@ -9,4 +9,5 @@
     </Licenses>
     <Default>true</Default>
     <SortingPriority>90</SortingPriority>
+    <Dependencies>full.tools.perl,full.tools.python</Dependencies>
 </Package>
