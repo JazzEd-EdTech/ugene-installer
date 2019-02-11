@@ -5,4 +5,5 @@
 	<Version>20</Version>
 	<ReleaseDate>2017-11-07</ReleaseDate>
 	<SortingPriority>0</SortingPriority>
+	<Script>installscript.qs</Script>
 </Package>
