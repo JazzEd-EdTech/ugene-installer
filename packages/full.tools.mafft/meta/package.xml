@@ -10,5 +10,5 @@
         <License name="MAFFT: MAFFT extentions licenses" file="license.extensions.txt" />
     </Licenses>
     <Default>true</Default>
-    <SortingPriority>74</SortingPriority>
+    <SortingPriority>73</SortingPriority>
 </Package>
