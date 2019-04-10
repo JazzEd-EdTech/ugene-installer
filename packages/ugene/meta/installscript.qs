@@ -125,7 +125,7 @@ function createShortcuts()
         var cmdLocation = windir + "\\system32\\cmd.exe";
         component.addOperation( "CreateShortcut",
                                 cmdLocation,
-                                "@StartMenuDir@/UGENECL.lnk", "workingDirectory=@TargetDir@", "/A /Q /K "+component_root_path + "/ugenecl.exe");
+                                "@StartMenuDir@/UGENECL.lnk", "workingDirectory=@TargetDir@", "/A /Q /K \""+component_root_path + "/ugenecl.exe\"");
         // Maintaince
         component.addOperation( "CreateShortcut",
                                 component_root_path + "/setup.exe", 
