@@ -7,4 +7,5 @@
     <Licenses>
         <License name="RScript: GNU GPL-2 | GPL-3" file="license.txt" />
     </Licenses>
+    <SortingPriority>3</SortingPriority>
 </Package>
