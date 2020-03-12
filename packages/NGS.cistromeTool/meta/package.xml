@@ -2,7 +2,7 @@
     <DisplayName>Cistrome</DisplayName>
     <Description>External tools for the Cistrome workflow.</Description>
     <Version>2.0.8</Version>
-    <ReleaseDate>2020.01.14</ReleaseDate>
+    <ReleaseDate>2020-01-14</ReleaseDate>
     <SortingPriority>2</SortingPriority>
     <Replaces>full.tools.cistrome</Replaces>
     <Dependencies>NGS.RScript</Dependencies>
