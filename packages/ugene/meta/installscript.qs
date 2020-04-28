@@ -138,86 +138,86 @@ function registerFileTypes()
     if (systemInfo.kernelType === "winnt") {
         var component_root_path = installer.value("TargetDir");
         component_root_path = component_root_path.replace(/\//g, "\\");
-        var ugeneuiPath = component_root_path + "\\ugeneui.exe";
+        var ugeneuiPath = "\"" + component_root_path + "\\ugeneui.exe\"";
 
         //Project file
-        component.addOperation("RegisterFileType",   "uprj",   ugeneuiPath + " %1", "Unipro UGENE project file", "text/plain", ugeneuiPath + ",0");
+        component.addOperation("RegisterFileType",   "uprj",   ugeneuiPath + " \"%1\"", "Unipro UGENE project file", "text/plain", ugeneuiPath + ",0");
 
         //ABIF format
-        component.addOperation("RegisterFileType",   "ab1",    ugeneuiPath + " %1", "ABIF file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "abi",    ugeneuiPath + " %1", "ABIF file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "abif",   ugeneuiPath + " %1", "ABIF file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "ab1",    ugeneuiPath + " \"%1\"", "ABIF file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "abi",    ugeneuiPath + " \"%1\"", "ABIF file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "abif",   ugeneuiPath + " \"%1\"", "ABIF file", "text/plain", ugeneuiPath + ",1");
 
         //ACE format
-        component.addOperation("RegisterFileType",   "ace", ugeneuiPath + " %1", "ACE genome assembly", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "ace", ugeneuiPath + " \"%1\"", "ACE genome assembly", "text/plain", ugeneuiPath + ",1");
 
         //CLUSTAL format
-        component.addOperation("RegisterFileType",   "aln",    ugeneuiPath + " %1", "Clustal alignment file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "aln",    ugeneuiPath + " \"%1\"", "Clustal alignment file", "text/plain", ugeneuiPath + ",1");
 
         //EMBL format
-        component.addOperation("RegisterFileType",   "em",     ugeneuiPath + " %1", "EMBL file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "emb",    ugeneuiPath + " %1", "EMBL file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "embl",   ugeneuiPath + " %1", "EMBL file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "em",     ugeneuiPath + " \"%1\"", "EMBL file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "emb",    ugeneuiPath + " \"%1\"", "EMBL file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "embl",   ugeneuiPath + " \"%1\"", "EMBL file", "text/plain", ugeneuiPath + ",1");
 
         //Swiss-Prot format
-        component.addOperation("RegisterFileType",   "sw",   ugeneuiPath + " %1", "Swiss-Prot file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "sw",   ugeneuiPath + " \"%1\"", "Swiss-Prot file", "text/plain", ugeneuiPath + ",1");
 
         // Fasta
-        component.addOperation("RegisterFileType",   "fa",    ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "mpfa",  ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "fna",   ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "fas",   ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "fasta", ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "seq",   ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "seqs",  ugeneuiPath + " %1", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "fa",    ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "mpfa",  ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "fna",   ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "fas",   ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "fasta", ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "seq",   ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "seqs",  ugeneuiPath + " \"%1\"", "FASTA sequence file", "text/plain", ugeneuiPath + ",1");
 
         //FASTQ format
-        component.addOperation("RegisterFileType",   "fastq", ugeneuiPath + " %1", "FASTQ file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "fastq", ugeneuiPath + " \"%1\"", "FASTQ file", "text/plain", ugeneuiPath + ",1");
 
         //Genbank format
-        component.addOperation("RegisterFileType",   "gb",      ugeneuiPath + " %1", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "gbk",     ugeneuiPath + " %1", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "gen",     ugeneuiPath + " %1", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "genbank", ugeneuiPath + " %1", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "gb",      ugeneuiPath + " \"%1\"", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "gbk",     ugeneuiPath + " \"%1\"", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "gen",     ugeneuiPath + " \"%1\"", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "genbank", ugeneuiPath + " \"%1\"", "Genbank plain text file", "text/plain", ugeneuiPath + ",1");
 
         //GFF format
-        component.addOperation("RegisterFileType",   "gff",   ugeneuiPath + " %1", "GFF format", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "gff",   ugeneuiPath + " \"%1\"", "GFF format", "text/plain", ugeneuiPath + ",1");
 
         //MSF format
-        component.addOperation("RegisterFileType",   "msf",   ugeneuiPath + " %1", "MSF multiple sequence file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "msf",   ugeneuiPath + " \"%1\"", "MSF multiple sequence file", "text/plain", ugeneuiPath + ",1");
 
         //NEWICK format
-        component.addOperation("RegisterFileType",   "nwk", ugeneuiPath + " %1", "NEWICK tree file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "newick", ugeneuiPath + " %1", "NEWICK tree file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "nwk", ugeneuiPath + " \"%1\"", "NEWICK tree file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "newick", ugeneuiPath + " \"%1\"", "NEWICK tree file", "text/plain", ugeneuiPath + ",1");
 
         //PDB format
-        component.addOperation("RegisterFileType",   "pdb", ugeneuiPath + " %1", "Protein Data Bank file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "pdb", ugeneuiPath + " \"%1\"", "Protein Data Bank file", "text/plain", ugeneuiPath + ",1");
 
         //MMDB/PRT format
-        component.addOperation("RegisterFileType",   "prt", ugeneuiPath + " %1", "MMDB file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "prt", ugeneuiPath + " \"%1\"", "MMDB file", "text/plain", ugeneuiPath + ",1");
 
         //SAM/BAM format
-        component.addOperation("RegisterFileType",   "sam", ugeneuiPath + " %1", "SAM genome assembly", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "bam", ugeneuiPath + " %1", "BAM genome assembly", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "sam", ugeneuiPath + " \"%1\"", "SAM genome assembly", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "bam", ugeneuiPath + " \"%1\"", "BAM genome assembly", "text/plain", ugeneuiPath + ",1");
 
         //SCF format -> DISABLED: overrides show desktop icon!!
-        //component.addOperation("RegisterFileType",   "scf", ugeneuiPath + " %1", "SCF file", "text/plain", ugeneuiPath + ",1");
+        //component.addOperation("RegisterFileType",   "scf", ugeneuiPath + " \"%1\"", "SCF file", "text/plain", ugeneuiPath + ",1");
 
         //Short Reads FASTA format
-        component.addOperation("RegisterFileType",   "srfa",    ugeneuiPath + " %1", "FASTA short reads file", "text/plain", ugeneuiPath + ",1");
-        component.addOperation("RegisterFileType",   "srfasta", ugeneuiPath + " %1", "FASTA short reads file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "srfa",    ugeneuiPath + " \"%1\"", "FASTA short reads file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "srfasta", ugeneuiPath + " \"%1\"", "FASTA short reads file", "text/plain", ugeneuiPath + ",1");
 
         //STOCKHOLM format
-        component.addOperation("RegisterFileType",   "sto", ugeneuiPath + " %1", "Stockholm alignment file", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "sto", ugeneuiPath + " \"%1\"", "Stockholm alignment file", "text/plain", ugeneuiPath + ",1");
 
         //UGENE Database format
-        component.addOperation("RegisterFileType",   "ugenedb", ugeneuiPath + " %1", "UGENE Database", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "ugenedb", ugeneuiPath + " \"%1\"", "UGENE Database", "text/plain", ugeneuiPath + ",1");
 
         //UGENE Query format
-        component.addOperation("RegisterFileType",   "uql", ugeneuiPath + " %1", "UGENE Query Language", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "uql", ugeneuiPath + " \"%1\"", "UGENE Query Language", "text/plain", ugeneuiPath + ",1");
 
         //UGENE Workflow format
-        component.addOperation("RegisterFileType",   "uwl", ugeneuiPath + " %1", "UGENE Workflow Language", "text/plain", ugeneuiPath + ",1");
+        component.addOperation("RegisterFileType",   "uwl", ugeneuiPath + " \"%1\"", "UGENE Workflow Language", "text/plain", ugeneuiPath + ",1");
     }
     /*if (systemInfo.kernelType == "linux") {
         component.addOperation("Execute", "@InstallerDirPath@/config/associate_files_linux.sh", "@TargetDir@", "workingdirectory=@InstallerDirPath@/config/");
