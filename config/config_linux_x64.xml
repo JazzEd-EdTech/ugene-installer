@@ -6,7 +6,8 @@
     <Publisher>Unipro</Publisher>
     <ProductUrl>http://ugene.net</ProductUrl>
     <StartMenuDir>Unipro UGENE</StartMenuDir>
-    <TargetDir>@ApplicationsDir@/UGENE</TargetDir>
+    <TargetDir>@HomeDir@/UGENE</TargetDir>
+    <AdminTargetDir>@HomeDir@/UGENE</AdminTargetDir>
     <AllowSpaceInPath>true</AllowSpaceInPath>
     <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
     <InstallActionColumnVisible>true</InstallActionColumnVisible>
