@@ -169,6 +169,12 @@ Component.prototype.onInstallationFinished = function() {
         } else {
             console.log("Resource update file doesn't exist");
         }
+
+        if (installer.fileExists(newInstallerbaseBinaryPath) {
+            if (installer.performOperation("Delete", newInstallerbaseBinaryPath)) {
+                console.log("Installation was finished, the UgeneInstaller deleted itself and exited.");
+            }
+        }
     }
 }
 
