@@ -127,8 +127,9 @@ function createShortcuts()
                                 cmdLocation,
                                 "@StartMenuDir@/UGENECL.lnk", "workingDirectory=@TargetDir@", "/A /Q /K \""+component_root_path + "/ugenecl.exe\"");
         // Maintaince
+		var maintenanceToolName = installer.value("MaintenanceToolName");
         component.addOperation( "CreateShortcut",
-                                component_root_path + "/setup.exe", 
+                                component_root_path + "/" + maintenanceToolName + ".exe", 
                                 "@StartMenuDir@/Update.lnk", "--updater");
     }
 }

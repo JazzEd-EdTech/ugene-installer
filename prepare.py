@@ -62,6 +62,9 @@ shutil.rmtree('packages/ugene.ugene/data/'+midPath+'data')
 # ugene data
 #shutil.rmtree('packages/ugene.data/data/')
 shutil.copytree(os.environ.get('UGENE_PATH')+'/'+midPath+'data','packages/ugene.data/data/'+midPath+'data')
+# ugene desktop shortcut
+shutil.copytree(os.environ.get('UGENE_PATH'),'packages/ugene_ex/data/')
+shutil.rmtree('packages/ugene_ex/data/'+midPath+'data')
 
 # Create empty tools folder for correct windows (un)installer work
 os.makedirs('packages/full.tools/data/'+midPath+'tools')
