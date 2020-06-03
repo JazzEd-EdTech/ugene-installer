@@ -58,6 +58,8 @@ function majorVersion(str)
 
 function Component()
 {
+    console.log("Creating component \"ugene\"");
+    component.loaded.connect(this, addCreateShortcutCheckBox);
     //
     // Check whether OS is supported.
     //
@@ -98,6 +100,30 @@ function Component()
         return;
     }*/
 }
+
+// called as soon as the component was loaded
+addCreateShortcutCheckBox = function()
+{
+    var page = gui.pageById(QInstaller.TargetDirectory);
+    if (page != null) {
+        page.title = "General Settings";
+        
+        var label = gui.findChild(page, "MessageLabel");
+        if (label) {
+        label.text = "Unipro UGENE Installation Folder";
+        }
+    }
+    
+    console.log("Execute function \"addCreateShortcutCheckBox\"");
+    // don't show when updating or uninstalling
+    if (installer.isInstaller()) {
+        console.log("Load CreateShortcutCheckBoxForm");
+        installer.addWizardPageItem(component, "CreateShortcutCheckBoxForm", QInstaller.TargetDirectory);
+        component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.text =
+            component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.text;
+    }
+}
+
 Component.prototype.createOperations = function()
 {
     component.createOperations();
@@ -106,6 +132,7 @@ Component.prototype.createOperations = function()
 }
 function createShortcuts()
 {
+    console.log("Execute function \"createShortcuts\"");
     if (systemInfo.kernelType === "winnt") {
         var component_root_path = installer.value("TargetDir");
         component_root_path = component_root_path.replace(/\//g, "\\");
@@ -131,11 +158,66 @@ function createShortcuts()
         component.addOperation( "CreateShortcut",
                                 component_root_path + "/" + maintenanceToolName + ".exe", 
                                 "@StartMenuDir@/Update.lnk", "--updater");
+                                
+        // Create desktop shortcuts
+        var checkboxIsChecked = component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.checked;
+        if (checkboxIsChecked) {
+            createDesktopShortcuts();
+        }
+    }
+}
+
+function createDesktopShortcuts()
+{
+    var component_root_path = installer.value("TargetDir");
+    
+    if (systemInfo.kernelType === "winnt") {
+        try {
+            component_root_path = component_root_path.replace(/\//g, "\\");
+
+            var windir = installer.environmentVariable("WINDIR");
+            if (windir == "") {
+                QMessageBox["warning"]( "Error" , "Error", "Could not find windows installation directory");
+                return;
+            }
+
+            component.addOperation("CreateShortcut",
+                                   component_root_path + "/ugeneui.exe",
+                                   "@DesktopDir@/UGENE.lnk");
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    if (systemInfo.kernelType === "linux") {
+        try {
+            component.addOperation("Copy",
+                                   "@InstallerDirPath@/config/ugene.png",
+                                   "@TargetDir@");
+            
+            component.addElevatedOperation("CreateDesktopEntry",
+                                           "/usr/share/applications/UGENE.desktop",                                
+                                           "Version=1.0\nType=Application\nTerminal=false\nExec=@TargetDir@/ugeneui\nName=UGENE\nIcon=@TargetDir@ugene.png\nName[en_US]=UGENE");
+            component.addElevatedOperation("Copy",
+                                           "/usr/share/applications/UGENE.desktop",
+                                           "@HomeDir@/Desktop/UGENE.desktop");
+        } catch (e) {
+            console.log(e);
+        }
+    }
+    if (systemInfo.kernelType === "darwin") {
+        try {
+            var argList = ["@InstallerDirPath@/config/makeAlias.sh",
+                           "@TargetDir@/Contents/MacOS/ugeneui"];
+            installer.execute("sh", argList);
+        } catch (e) {
+            console.log(e);
+        }
     }
 }
 
 function registerFileTypes()
 {
+    console.log("Execute function \"registerFileTypes\"");
     if (systemInfo.kernelType === "winnt") {
         var component_root_path = installer.value("TargetDir");
         component_root_path = component_root_path.replace(/\//g, "\\");

@@ -11,4 +11,7 @@
     </Licenses>
     <SortingPriority>100</SortingPriority>
     <Script>installscript.qs</Script>
+    <UserInterfaces>
+        <UserInterface>createshortcutcheckboxform.ui</UserInterface>
+    </UserInterfaces>
 </Package>
