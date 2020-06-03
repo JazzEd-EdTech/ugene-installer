@@ -5,5 +5,7 @@
     <Version>2.2.30</Version>
     <ReleaseDate>2016-02-02</ReleaseDate>
     <Default>true</Default>
-    <SortingPriority>94</SortingPriority>
+    <SortingPriority>94</SortingPriority>    <Licenses>
+        <License name="BLAST/BLAST+: PUBLIC DOMAIN NOTICE" file="license.txt" />
+    </Licenses>
 </Package>
