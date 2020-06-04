@@ -5,7 +5,7 @@
     <ForcedInstallation>true</ForcedInstallation>
     <Virtual>true</Virtual>
     <Essential>true</Essential>
-    <Version>3.0.3.1</Version>
+    <Version>3.3</Version>
     <ReleaseDate>2018-05-31</ReleaseDate>
     <SortingPriority>100</SortingPriority>
     <Script>installscript.qs</Script>

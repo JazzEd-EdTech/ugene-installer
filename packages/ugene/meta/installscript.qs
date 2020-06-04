@@ -161,6 +161,23 @@ function createShortcuts()
                                 
         // Create desktop shortcuts
         var checkboxIsChecked = component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.checked;
+        console.log("checkbox CreateShortcutCheckBox == " + checkboxIsChecked);
+        if (checkboxIsChecked) {
+            createDesktopShortcuts();
+        }
+    }
+    if (systemInfo.kernelType === "linux") {
+        // Create desktop shortcuts
+        var checkboxIsChecked = component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.checked;
+        console.log("checkbox CreateShortcutCheckBox == " + checkboxIsChecked);
+        if (checkboxIsChecked) {
+            createDesktopShortcuts();
+        }
+    }
+    if (systemInfo.kernelType === "darwin") {
+        // Create desktop shortcuts
+        var checkboxIsChecked = component.userInterface("CreateShortcutCheckBoxForm").CreateShortcutCheckBox.checked;
+        console.log("checkbox CreateShortcutCheckBox == " + checkboxIsChecked);
         if (checkboxIsChecked) {
             createDesktopShortcuts();
         }
@@ -189,19 +206,19 @@ function createDesktopShortcuts()
         }
     }
     if (systemInfo.kernelType === "linux") {
+        console.log("Create desktop shortcut");
         try {
+            component.addOperation("CreateDesktopEntry",
+                                   "@HomeDir@/Desktop/UGENE.desktop",
+                                   "Version=1.0\nType=Application\nTerminal=false\nExec=@TargetDir@/ugeneui\nName=Unipro UGENE\nIcon=@TargetDir@/ugene.png\nName[en_US]=Unipro UGENE");
             component.addOperation("Copy",
-                                   "@InstallerDirPath@/config/ugene.png",
-                                   "@TargetDir@");
-            
-            component.addElevatedOperation("CreateDesktopEntry",
-                                           "/usr/share/applications/UGENE.desktop",                                
-                                           "Version=1.0\nType=Application\nTerminal=false\nExec=@TargetDir@/ugeneui\nName=UGENE\nIcon=@TargetDir@ugene.png\nName[en_US]=UGENE");
-            component.addElevatedOperation("Copy",
-                                           "/usr/share/applications/UGENE.desktop",
-                                           "@HomeDir@/Desktop/UGENE.desktop");
+                                   "@HomeDir@/Desktop/UGENE.desktop",
+                                   "@HomeDir@/.local/share/applications/UGENE.desktop");
+            component.addOperation("Copy",
+                                   "@TargetDir@/ugene.png",
+                                   "@HomeDir@/.icons/ugene.png");
         } catch (e) {
-            console.log(e);
+            console.log("ERROR: Create desktop shortcut: " + e);
         }
     }
     if (systemInfo.kernelType === "darwin") {

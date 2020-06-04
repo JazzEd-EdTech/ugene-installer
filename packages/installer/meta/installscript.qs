@@ -20,11 +20,15 @@ function finalizeInstallerUpdating() {
 }
 
 function getInstallerVersion() {
+    console.log("installer.value(\"Version\") == " + installer.value("Version"));
+    console.log("component.value(\"Version\") == " + component.value("Version"));
     // There should be a method to get the installer version from scripts
     if (installer.value("Version") == "1.23.0") {
         return "2.0.1";
     } else if (installer.value("Version") == "1.30.0") {
         return "3.0.3.1";
+    } else if (installer.value("Version") == "1.35.0") {
+        return "3.3";
     } else {
         return "";
     }
