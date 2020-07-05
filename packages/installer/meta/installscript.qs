@@ -29,6 +29,8 @@ function getInstallerVersion() {
         return "3.0.3.1";
     } else if (installer.value("Version") == "1.35.0") {
         return "3.3";
+    } else if (installer.value("Version") == "1.36.0") {
+        return "4.0";
     } else {
         return "";
     }
