@@ -223,7 +223,7 @@ function createDesktopShortcuts()
     }
     if (systemInfo.kernelType === "darwin") {
         try {
-            var argList = ["@InstallerDirPath@/config/makeAlias.sh",
+            var argList = ["@InstallerDirPath@/config/makeMacAlias.sh",
                            "@TargetDir@/Contents/MacOS/ugeneui"];
             installer.execute("sh", argList);
         } catch (e) {
