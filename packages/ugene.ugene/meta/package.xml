@@ -3,7 +3,7 @@
     <Description>UGENE executables.</Description>
     <Default>true</Default>
     <ForcedInstallation>true</ForcedInstallation>
-    <Version>1.32.0</Version>
+    <Version>36.0</Version>
     <ReleaseDate>2019.02.20</ReleaseDate>
     <Licenses>
         <License file="license.txt" name="UGENE: GNU GPLv2" />

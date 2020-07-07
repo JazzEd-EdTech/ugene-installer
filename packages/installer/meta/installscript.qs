@@ -21,6 +21,7 @@ function finalizeInstallerUpdating() {
 
 function getInstallerVersion() {
     console.log("installer.value(\"Version\") == " + installer.value("Version"));
+    console.log("component.value(\"Name\") == " + component.value("Name"));
     console.log("component.value(\"Version\") == " + component.value("Version"));
     // There should be a method to get the installer version from scripts
     if (installer.value("Version") == "1.23.0") {
@@ -28,9 +29,9 @@ function getInstallerVersion() {
     } else if (installer.value("Version") == "1.30.0") {
         return "3.0.3.1";
     } else if (installer.value("Version") == "1.35.0") {
-        return "3.3";
-    } else if (installer.value("Version") == "1.36.0") {
-        return "4.0";
+        return "3.2";
+    } else if (installer.value("Version") == "36.0") {
+        return "3.2.3.1";
     } else {
         return "";
     }
@@ -62,7 +63,7 @@ function Component() {
         finalizeInstallerUpdating();
     } else {
         if (isUpdateNecessary() && installer.isInstaller()) {
-            cancelInstallation("The installer version is outdated. Please download an actual version from the <a href='http://ugene.net/download.html'>UGENE downloads page</a>.");
+            cancelInstallation("The UGENE installer version is outdated. Please download an actual version from the <a href='http://ugene.net/download.html'>UGENE downloads page</a>.");
             return;
         }
 
