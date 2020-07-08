@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>Unipro UGENE</Name>
-    <Version>36.0</Version>
+    <Version>35.1</Version>
     <Title>Unipro UGENE Installer</Title>
     <Publisher>Unipro</Publisher>
     <ProductUrl>http://ugene.net</ProductUrl>

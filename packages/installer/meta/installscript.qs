@@ -30,7 +30,7 @@ function getInstallerVersion() {
         return "3.0.3.1";
     } else if (installer.value("Version") == "1.35.0") {
         return "3.2";
-    } else if (installer.value("Version") == "36.0") {
+    } else if (installer.value("Version") == "35.1") {
         return "3.2.3.1";
     } else {
         return "";
