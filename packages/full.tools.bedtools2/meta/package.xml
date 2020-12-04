@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>BEDtools</DisplayName>
     <Description>Flexible tools for genome arithmetic and DNA sequence analysis.</Description>
-    <Version>2.20.1</Version>
-    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Version>2.29.2</Version>
+    <ReleaseDate>2019-12-18</ReleaseDate>
     <Licenses>
         <License name="BEDtools: GNU GPLv2" file="license.txt" />
     </Licenses>
