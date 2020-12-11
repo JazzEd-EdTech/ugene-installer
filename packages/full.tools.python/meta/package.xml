@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Python</DisplayName>
     <Description>Python is a widely used general-purpose, high-level programming language.</Description>
-    <Version>2.7.5.1</Version>
-    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Version>2.7.5.2</Version>
+    <ReleaseDate>2013-05-15</ReleaseDate>
     <Licenses>
         <License name="Python: Python Software Foundation License" file="license.txt" />
     </Licenses>

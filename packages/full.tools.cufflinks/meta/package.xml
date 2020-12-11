@@ -2,8 +2,8 @@
 <Package>
     <DisplayName>Cufflinks</DisplayName>
     <Description>Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples.</Description>
-    <Version>2.0.2</Version>
-    <ReleaseDate>2016-02-02</ReleaseDate>
+    <Version>2.0.2.0.1</Version>
+    <ReleaseDate>2012-07-08</ReleaseDate>
     <Licenses>
         <License name="Cufflinks: Boost Software License, Version 1.0" file="license.txt" />
     </Licenses>

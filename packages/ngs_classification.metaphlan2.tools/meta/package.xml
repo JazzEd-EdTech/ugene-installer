@@ -3,7 +3,7 @@
 	<DisplayName>MetaPhlAn2 external tools</DisplayName>
 	<Description>Check this item to install MetaPhlAn2 executables.</Description>
 	<Dependencies>full.tools.python, full.tools.bowtie2</Dependencies>
-	<Version>2.7.7</Version>
+	<Version>2.7.7.0.1</Version>
 	<ReleaseDate>2018-05-31</ReleaseDate>
 	<Licenses>
 		<License name="MetaPhlAn2 license" file="license.txt" />
