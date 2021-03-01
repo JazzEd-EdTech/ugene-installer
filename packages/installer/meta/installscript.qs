@@ -30,7 +30,7 @@ function getInstallerVersion() {
         return "3.0.3.1";
     } else if (installer.value("Version") == "1.35.0") {
         return "3.2";
-    } else if (installer.value("Version") == "35.1") {
+    } else if (installer.value("Version") == "37.0") {
         return "3.2.3.1";
     } else {
         return "";
@@ -175,12 +175,6 @@ Component.prototype.onInstallationFinished = function() {
             installer.setValue("DefaultResourceReplacement", normalizedUpdateResourceFilePath);
         } else {
             console.log("Resource update file doesn't exist");
-        }
-
-        if (installer.fileExists(newInstallerbaseBinaryPath)) {
-            if (installer.performOperation("Delete", newInstallerbaseBinaryPath)) {
-                console.log("Installation was finished, the UgeneInstaller deleted itself and exited.");
-            }
         }
     }
 }
