@@ -4,7 +4,7 @@
     <Version>35.1</Version>
     <Title>Unipro UGENE Installer</Title>
     <Publisher>Unipro</Publisher>
-    <ProductUrl>http://ugene.net</ProductUrl>
+    <ProductUrl>https://ugene.net</ProductUrl>
     <StartMenuDir>Unipro UGENE</StartMenuDir>
     <TargetDir>@HomeDir@/UGENE</TargetDir>
     <AdminTargetDir>@HomeDir@/UGENE</AdminTargetDir>
@@ -29,7 +29,7 @@
     <MaintenanceToolName>setup</MaintenanceToolName>
     <RemoteRepositories>
         <Repository>
-            <Url>http://ugene.net/downloads/repoLin64</Url>
+            <Url>http://archive.ugene.net/downloads/repoLin64</Url>
             <Enabled>1</Enabled>
             <DisplayName>UGENE general repository</DisplayName>
         </Repository>
